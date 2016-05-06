@@ -1,7 +1,9 @@
 var _ = require("lodash");
 
 var worker = function(coll) {
-  return _.filter(coll, {active:true})
+  return _.sortBy(coll, function (item) {
+    return -item.quantity
+  })
 };
 
 module.exports = worker;
