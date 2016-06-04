@@ -7,9 +7,3 @@ var dinosaurs = db.sublevel('dinosaurs');
 
 robots.put('slogan', 'beep boop');
 dinosaurs.put('slogan', 'rawr');
- /*
- , function (err) {
-        if (err) return console.error(err);
-        console.log('%s=%s', key, obj[key]);
-    })
- */
